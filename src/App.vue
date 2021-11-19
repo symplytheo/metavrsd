@@ -5,7 +5,7 @@
     </div>
   </header>
 
-  <main class="pb-20 pt-10">
+  <div class="pb-20 pt-10">
     <section
       id="welcome"
       class="
@@ -13,7 +13,7 @@
         max-w-screen-sm
         mx-auto
         px-4
-        mb-10
+        mb-20
         md:px-0
         text-center
         md:text-left
@@ -47,63 +47,61 @@
       </div>
     </section>
 
-    <section id="mission" class="px-4 md:px-0 relative">
-      <div class="pb-20">
-        <div class="pt-52 px-3 container max-w-md mx-auto">
-          <p class="text-xl font-semibold">
-            to educate the world about the <br />
-            <span class="text-primary">
-              metaverse, <br />
-              blockchain and <br />
-              other disruptive concepts <br />
-            </span>
-            with simple, fun and personalised games.
-          </p>
-        </div>
-        <div
-          class="py-4 text-5xl sm:text-8xl md:text-9xl text-center font-bold"
-        >
-          Our Mission
-        </div>
+    <section id="mission" class="pt-48 py-10 my-10 px-5 md:px-0">
+      <div class="container max-w-md mx-auto mb-5">
+        <p class="text-xl font-semibold">
+          to educate the world about the <br />
+          <span class="text-primary">
+            metaverse, <br />
+            blockchain and <br />
+            other disruptive concepts <br />
+          </span>
+          with simple, fun and personalised games.
+        </p>
+      </div>
+      <div class="text-4xl sm:text-8xl md:text-9xl md:text-center font-bold">
+        Our Mission
       </div>
 
-      <div class="absolute top-1 left-0 w-full md:hidden" style="z-index: -1">
+      <!-- <div class="absolute top-1 left-0 w-full md:hidden" style="z-index: -1">
         <img src="./assets/victory.png" class="object-contain w-full mx-auto" />
-      </div>
+      </div> -->
     </section>
 
     <section
       id="waitlist"
-      class="pt-20 pb-40 text-center container max-w-md mx-auto px-4 md:px-0"
+      class="py-10 text-center container max-w-md mx-auto px-1 md:px-0"
     >
       <form @submit.prevent="joinWaitlist">
-        <h5 class="text-4xl font-bold md:text-xl md:font-normal mb-3">
+        <h5 class="text-3xl font-bold md:text-xl md:font-normal mb-3">
           be the first to know
           <span class="text-primary md:text-white">when we launch</span>
         </h5>
-        <input
-          v-model="email"
-          type="email"
-          placeholder="Enter your email"
-          class="
-            px-3
-            py-3
-            placeholder-gray-400
-            bg-transparent
-            text-sm
-            border border-white
-            outline-none
-            animate-pulse
-            focus:outline-none focus:ring-0 focus:animate-none
-            hover:animate-none
-            w-full
-          "
-          required
-        />
+        <div class="px-3">
+          <input
+            v-model="email"
+            type="email"
+            placeholder="Enter your email"
+            class="
+              px-3
+              py-3
+              placeholder-gray-400
+              bg-transparent
+              text-sm
+              border border-white
+              outline-none
+              animate-pulse
+              focus:outline-none focus:ring-0 focus:animate-none
+              hover:animate-none
+              w-full
+            "
+            required
+          />
+        </div>
       </form>
     </section>
 
-    <div
+    <!-- <div
       id="partner"
       class="pt-36 pb-10 px-10 text-center container max-w-sm mx-auto"
     >
@@ -129,10 +127,47 @@
           <span v-if="i < socials.length - 1">-</span>
         </span>
       </p>
-    </div>
-  </main>
+    </div> -->
+  </div>
 
-  <footer class="text-center p-4 pt-10 relative">
+  <footer id="footer" class="flex flex-col justify-end gap-y-6">
+    <div
+      id="partner"
+      class="pt-36 pb-8 mt-8 px-5 text-center container max-w-sm mx-auto"
+    >
+      <h5 class="text-4xl md:text-lg">want to work or partner with us?</h5>
+      <p class="font-bold">hello@metavrsd.io</p>
+    </div>
+
+    <div
+      id="community"
+      class="pt-8 pb-32 text-center container max-w-sm mx-auto"
+    >
+      <h5 class="text-2xl">join our community</h5>
+      <p class="font-bold text-sm">
+        <span v-for="(item, i) in socials" :key="i">
+          <a
+            :href="item.href"
+            class="m-1"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {{ item.title }}
+          </a>
+          <span v-if="i < socials.length - 1">-</span>
+        </span>
+      </p>
+    </div>
+
+    <div class="text-center p-2">
+      <div class="mb-2">San Francisco | Lagos | Waterloo</div>
+      <div class="text-black font-bold">
+        &copy; Metavrsd {{ new Date().getFullYear() }}.
+      </div>
+    </div>
+  </footer>
+
+  <!-- <footer class="text-center p-4 pt-10 relative">
     <div class="mb-2">San Francisco | Lagos | Waterloo</div>
     <div class="text-black">
       &copy; Metavrsd {{ new Date().getFullYear() }}.
@@ -141,7 +176,7 @@
     <div class="absolute bottom-0 left-0 md:hidden w-full" style="z-index: -1">
       <img src="./assets/okay.png" class="object-contain mx-auto w-full" />
     </div>
-  </footer>
+  </footer> -->
 </template>
 
 <script>
@@ -170,4 +205,17 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+#mission {
+  background-image: url('./assets/victory.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#footer {
+  background-image: url('./assets/okay.png');
+  background-size: 100% 732px;
+  background-repeat: no-repeat;
+}
+</style>
