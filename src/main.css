@@ -11,3 +11,8 @@
 html {
   scroll-behavior: smooth;
 }
+
+html, body, #app {
+  background: #000;
+  color: #fff;
+}
