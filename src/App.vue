@@ -69,7 +69,7 @@
 
       <img
         src="./assets/victory.png"
-        class="absolute top-0 left-0 w-full"
+        class="absolute top-0 left-0 w-full md:hidden"
         style="z-index: -1"
       />
     </section>
@@ -140,11 +140,12 @@
       &copy; Metavrsd {{ new Date().getFullYear() }}.
     </div>
 
-    <img
-      src="./assets/okay.png"
-      class="absolute -bottom-10 left-0 w-full h-auto"
+    <div
+      class="absolute -bottom-10 left-0 md:hidden w-full"
       style="z-index: -1"
-    />
+    >
+      <img src="./assets/okay.png" class="h-auto mx-auto w-auto -mb-14" />
+    </div>
   </footer>
 </template>
 
