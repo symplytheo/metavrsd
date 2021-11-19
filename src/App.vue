@@ -1,5 +1,5 @@
 <template>
-  <header class="flex items-center py-2 px-4">
+  <header class="flex items-center py-4 px-8">
     <div class="mx-auto animate">
       <app-logo />
     </div>
@@ -24,7 +24,7 @@
         <span class="text-primary">Welcome</span>, <br />
         Let’s get you meta-versed
       </h4>
-      <p class="mt-3 text-xl font-semibold">
+      <p class="mt-3 mb-2 text-xl font-semibold">
         the world is changing really fast and it’s easy to feel like you can’t
         keep up with everything. well, here we are!
       </p>
@@ -49,7 +49,7 @@
 
     <section id="mission" class="px-4 md:px-0 relative">
       <div class="pb-20">
-        <div class="pt-36 px-5 container max-w-md mx-auto">
+        <div class="pt-44 px-5 container max-w-md mx-auto">
           <p class="text-xl font-semibold">
             to educate the world about the <br />
             <span class="text-primary">
@@ -67,11 +67,9 @@
         </div>
       </div>
 
-      <img
-        src="./assets/victory.png"
-        class="absolute top-0 left-0 w-full md:hidden"
-        style="z-index: -1"
-      />
+      <div class="absolute top-1 left-0 w-full md:hidden" style="z-index: -1">
+        <img src="./assets/victory.png" class="h-auto w-auto mx-auto" />
+      </div>
     </section>
 
     <section
@@ -107,7 +105,7 @@
 
     <div
       id="partner"
-      class="pt-28 pb-6 px-10 text-center container max-w-sm mx-auto"
+      class="pt-36 pb-6 px-10 text-center container max-w-sm mx-auto"
     >
       <h5 class="text-4xl md:text-lg">want to work or partner with us?</h5>
       <p class="font-bold">hello@metavrsd.io</p>
@@ -134,17 +132,14 @@
     </div>
   </main>
 
-  <footer class="text-center px-4 relative">
+  <footer class="text-center p-4 relative">
     <div class="mb-2">San Francisco | Lagos | Waterloo</div>
     <div class="text-black">
       &copy; Metavrsd {{ new Date().getFullYear() }}.
     </div>
 
-    <div
-      class="absolute -bottom-10 left-0 md:hidden w-full"
-      style="z-index: -1"
-    >
-      <img src="./assets/okay.png" class="h-auto mx-auto w-auto -mb-14" />
+    <div class="absolute bottom-0 left-0 md:hidden w-full" style="z-index: -1">
+      <img src="./assets/okay.png" class="h-auto mx-auto w-auto" />
     </div>
   </footer>
 </template>
