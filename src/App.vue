@@ -22,7 +22,7 @@
             <base-button
               size="large"
               variant="outlined"
-              class="w-full md:w-auto"
+              class="w-full md:w-auto border-primary"
             >
               Join our community
             </base-button>
@@ -183,7 +183,7 @@
 
 <script>
 import AppLogo from '@/components/Logo.vue'
-import BaseButton from '@/components/base/Button.vue'
+import BaseButton from '@/components/Button.vue'
 
 export default {
   name: 'App',
