@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center uppercase px-4 font-medium tracking-wider;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
