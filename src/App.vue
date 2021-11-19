@@ -107,7 +107,7 @@
 
     <div
       id="partner"
-      class="pt-28 pb-6 px-10 text-center container max-w-sm mx-auto"
+      class="pt-36 pb-6 px-10 text-center container max-w-sm mx-auto"
     >
       <h5 class="text-4xl md:text-lg">want to work or partner with us?</h5>
       <p class="font-bold">hello@metavrsd.io</p>
@@ -134,17 +134,14 @@
     </div>
   </main>
 
-  <footer class="text-center px-4 relative">
+  <footer class="text-center p-4 relative">
     <div class="mb-2">San Francisco | Lagos | Waterloo</div>
     <div class="text-black">
       &copy; Metavrsd {{ new Date().getFullYear() }}.
     </div>
 
-    <div
-      class="absolute -bottom-10 left-0 md:hidden w-full"
-      style="z-index: -1"
-    >
-      <img src="./assets/okay.png" class="h-auto mx-auto w-auto -mb-14" />
+    <div class="absolute bottom-0 left-0 md:hidden w-full" style="z-index: -1">
+      <img src="./assets/okay.png" class="h-auto mx-auto w-auto" />
     </div>
   </footer>
 </template>
