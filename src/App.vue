@@ -13,11 +13,11 @@
           >,<br />
           Let’s get you meta-versed
         </h4>
-        <p class="mb-5 mt-3 text-xl md:text-2xl font-semibold">
+        <p class="my-3 text-xl md:text-2xl font-semibold">
           the world is changing really fast and it’s easy to feel like you can’t
           keep up with everything. well, here we are!
         </p>
-        <div class="flex flex-col md:flex-row gap-3">
+        <div class="flex flex-col md:flex-row gap-3 py-2">
           <a href="#community">
             <base-button
               size="large"

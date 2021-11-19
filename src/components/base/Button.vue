@@ -1,5 +1,13 @@
 <template>
-  <button :type="type" class="btn" :class="[buttonClass, colorClass]">
+  <button
+    :type="type"
+    class="btn"
+    :class="[
+      buttonClass,
+      colorClass,
+      variant === 'text' ? 'border-transparent' : `border-${this.color}`,
+    ]"
+  >
     <slot />
   </button>
 </template>
@@ -16,10 +24,10 @@ export default {
     colorClass() {
       return `${
         this.variant === 'contained'
-          ? `bg-${this.color} border-${this.color} text-black`
+          ? `bg-${this.color} text-black`
           : this.variant === 'outlined'
-          ? `bg-transparent text-${this.color} border-${this.color}`
-          : `text-${this.color} border-transparent bg-black bg-opacity-0 hover:bg-opacity-10`
+          ? `bg-transparent text-${this.color}`
+          : `text-${this.color} bg-black bg-opacity-0 hover:bg-opacity-10`
       }`
     },
     buttonClass() {
