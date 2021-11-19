@@ -24,7 +24,7 @@
         <span class="text-primary">Welcome</span>, <br />
         Let’s get you meta-versed
       </h4>
-      <p class="my-5 text-xl font-semibold">
+      <p class="mb-5 mt-3 text-xl font-semibold">
         the world is changing really fast and it’s easy to feel like you can’t
         keep up with everything. well, here we are!
       </p>
@@ -49,7 +49,7 @@
 
     <section id="mission" class="px-4 md:px-0 relative">
       <div class="pb-20">
-        <div class="pt-44 px-3 container max-w-md mx-auto">
+        <div class="pt-52 px-3 container max-w-md mx-auto">
           <p class="text-xl font-semibold">
             to educate the world about the <br />
             <span class="text-primary">
@@ -74,7 +74,7 @@
 
     <section
       id="waitlist"
-      class="pt-20 pb-28 text-center container max-w-md mx-auto px-4 md:px-0"
+      class="pt-20 pb-40 text-center container max-w-md mx-auto px-4 md:px-0"
     >
       <form @submit.prevent="joinWaitlist">
         <h5 class="text-4xl font-bold md:text-xl md:font-normal mb-3">
@@ -105,7 +105,7 @@
 
     <div
       id="partner"
-      class="pt-36 pb-6 px-10 text-center container max-w-sm mx-auto"
+      class="pt-36 pb-10 px-10 text-center container max-w-sm mx-auto"
     >
       <h5 class="text-4xl md:text-lg">want to work or partner with us?</h5>
       <p class="font-bold">hello@metavrsd.io</p>
@@ -132,7 +132,7 @@
     </div>
   </main>
 
-  <footer class="text-center p-4 relative">
+  <footer class="text-center p-4 pt-10 relative">
     <div class="mb-2">San Francisco | Lagos | Waterloo</div>
     <div class="text-black">
       &copy; Metavrsd {{ new Date().getFullYear() }}.
