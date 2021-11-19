@@ -1,6 +1,6 @@
 <template>
   <header class="flex items-center py-4 px-8 relative">
-    <a href="/" class="mx-auto animate">
+    <a href="/" class="mx-auto">
       <app-logo />
     </a>
   </header>
@@ -9,7 +9,8 @@
     <section class="px-4 mb-20 md:px-0 text-center md:text-left relative">
       <div class="container max-w-screen-md mx-auto">
         <h4 class="text-4xl md:text-5xl font-bold">
-          <span class="text-primary">Welcome</span>, <br />
+          <span class="text-primary animate-bounce inline-block">Welcome</span
+          >,<br />
           Let’s get you meta-versed
         </h4>
         <p class="mb-5 mt-3 text-xl md:text-2xl font-semibold">
@@ -54,7 +55,7 @@
       <div class="container max-w-screen-sm mx-auto mb-5">
         <p class="text-xl sm:text-2xl md:text-3xl font-semibold">
           to educate the world about the <br />
-          <span class="text-primary">
+          <span class="text-primary inline-block animate-pulse">
             metaverse, <br />
             blockchain and <br />
             other disruptive concepts <br />
@@ -172,7 +173,8 @@
       <div class="text-center p-2 md:pb-5">
         <div class="mb-2">San Francisco | Lagos | Waterloo</div>
         <div class="text-black font-bold">
-          &copy; <a href="/">Metavrsd</a> {{ new Date().getFullYear() }}.
+          &copy; <a href="/" class="animate-pulse inline-flex">Metavrsd</a>
+          {{ new Date().getFullYear() }}.
         </div>
       </div>
     </div>
