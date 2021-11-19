@@ -1,5 +1,5 @@
 <template>
-  <header class="flex items-center py-2 px-4">
+  <header class="flex items-center py-4 px-8">
     <div class="mx-auto animate">
       <app-logo />
     </div>
@@ -24,7 +24,7 @@
         <span class="text-primary">Welcome</span>, <br />
         Let’s get you meta-versed
       </h4>
-      <p class="mt-3 text-xl font-semibold">
+      <p class="mt-3 mb-2 text-xl font-semibold">
         the world is changing really fast and it’s easy to feel like you can’t
         keep up with everything. well, here we are!
       </p>
