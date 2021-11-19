@@ -113,7 +113,7 @@
 
     <div
       id="community"
-      class="pt-14 pb-24 text-center container max-w-sm mx-auto"
+      class="pt-14 pb-32 text-center container max-w-sm mx-auto"
     >
       <h5 class="text-2xl">join our community</h5>
       <p class="font-bold text-sm">
