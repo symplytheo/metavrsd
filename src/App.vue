@@ -132,7 +132,7 @@
     </div>
   </main>
 
-  <footer class="text-center p-4 relative">
+  <footer class="text-center p-4 pt-10 relative">
     <div class="mb-2">San Francisco | Lagos | Waterloo</div>
     <div class="text-black">
       &copy; Metavrsd {{ new Date().getFullYear() }}.
