@@ -49,7 +49,7 @@
 
     <section id="mission" class="px-4 md:px-0 relative">
       <div class="pb-20">
-        <div class="pt-36 px-5 container max-w-md mx-auto">
+        <div class="pt-44 px-5 container max-w-md mx-auto">
           <p class="text-xl font-semibold">
             to educate the world about the <br />
             <span class="text-primary">
@@ -67,11 +67,9 @@
         </div>
       </div>
 
-      <img
-        src="./assets/victory.png"
-        class="absolute top-0 left-0 w-full md:hidden"
-        style="z-index: -1"
-      />
+      <div class="absolute top-1 left-0 w-full md:hidden" style="z-index: -1">
+        <img src="./assets/victory.png" class="h-auto w-auto mx-auto" />
+      </div>
     </section>
 
     <section
