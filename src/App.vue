@@ -5,7 +5,7 @@
     </div>
   </header>
 
-  <main class="py-20">
+  <main class="pb-20 pt-10">
     <section
       id="welcome"
       class="
@@ -24,11 +24,11 @@
         <span class="text-primary">Welcome</span>, <br />
         Let’s get you meta-versed
       </h4>
-      <p class="mt-3 mb-2 text-xl font-semibold">
+      <p class="my-5 text-xl font-semibold">
         the world is changing really fast and it’s easy to feel like you can’t
         keep up with everything. well, here we are!
       </p>
-      <div class="mt-2 flex flex-col md:flex-row gap-2">
+      <div class="flex flex-col md:flex-row gap-3">
         <a href="#community">
           <base-button size="large" variant="outlined" class="w-full md:w-auto">
             Join our community
@@ -49,7 +49,7 @@
 
     <section id="mission" class="px-4 md:px-0 relative">
       <div class="pb-20">
-        <div class="pt-44 px-5 container max-w-md mx-auto">
+        <div class="pt-44 px-3 container max-w-md mx-auto">
           <p class="text-xl font-semibold">
             to educate the world about the <br />
             <span class="text-primary">
@@ -68,7 +68,7 @@
       </div>
 
       <div class="absolute top-1 left-0 w-full md:hidden" style="z-index: -1">
-        <img src="./assets/victory.png" class="h-auto w-auto mx-auto" />
+        <img src="./assets/victory.png" class="object-contain w-full mx-auto" />
       </div>
     </section>
 
@@ -139,7 +139,7 @@
     </div>
 
     <div class="absolute bottom-0 left-0 md:hidden w-full" style="z-index: -1">
-      <img src="./assets/okay.png" class="h-auto mx-auto w-auto" />
+      <img src="./assets/okay.png" class="object-contain mx-auto w-full" />
     </div>
   </footer>
 </template>
