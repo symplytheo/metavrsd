@@ -6,18 +6,27 @@
   </header>
 
   <main class="pb-20 pt-10">
-    <section class="px-4 mb-20 md:px-0 text-center md:text-left relative">
-      <div class="container max-w-screen-md mx-auto">
-        <h4 class="text-4xl md:text-5xl font-bold">
-          <span class="text-primary animate-bounce inline-block">Welcome</span
+    <section
+      class="
+        container
+        max-w-md
+        mx-auto
+        text-center
+        relative
+        md:mx-0 md:max-w-full md:text-left
+      "
+    >
+      <div class="container max-w-screen-lg md:px-10 mx-auto">
+        <h4 class="text-5xl sm:text-6xl md:text-6xl md:text-center font-bold">
+          <span class="text-primary inline-block animate-pulse">Welcome</span
           >,<br />
-          Let’s get you meta-versed
+          let’s get you meta-versed
         </h4>
-        <p class="my-3 text-xl md:text-2xl font-semibold">
+        <p class="my-3 text-xl md:text-2xl font-medium hidden md:block">
           the world is changing really fast and it’s easy to feel like you can’t
           keep up with everything. well, here we are!
         </p>
-        <div class="flex flex-col md:flex-row gap-3 py-2">
+        <div class="flex flex-col md:flex-row gap-3 p-2">
           <a href="#community">
             <base-button
               size="large"
@@ -41,19 +50,32 @@
       </div>
 
       <div
-        class="absolute -bottom-20 right-20 hidden md:block"
+        class="absolute -bottom-40 right-60 hidden md:block"
         style="z-index: -1"
       >
-        <img src="./assets/victory-large.png" class="w-56 object-contain" />
+        <img src="./assets/victory-large.png" class="w-60 object-contain" />
       </div>
     </section>
 
-    <section
-      id="mission"
-      class="pt-48 pb-10 my-10 px-5 md:px-0 md:pt-32 relative"
-    >
-      <div class="container max-w-screen-sm mx-auto mb-5">
-        <p class="text-xl sm:text-2xl md:text-3xl font-semibold">
+    <section class="container max-w-md mx-auto md:hidden relative">
+      <img src="./assets/victory.png" class="relative mx-auto" />
+
+      <div class="absolute bottom-24 w-full flex justify-center">
+        <p class="w-72 text-center text-2xl">
+          the world is changing really fast and it’s easy to feel like you can’t
+          keep up with everything. well, here we are!
+        </p>
+      </div>
+    </section>
+
+    <div class="-mt-72 md:hidden">
+      <img src="./assets/rock.png" class="mx-auto" />
+    </div>
+
+    <section id="mission" class="md:mx-0 px-2 md:px-0 md:pt-52 relative">
+      <div class="container max-w-md md:max-w-screen-sm mx-auto mb-5">
+        <h4 class="text-5xl font-bold md:hidden">Our Mission</h4>
+        <p class="text-2xl sm:text-2xl md:text-3xl md:pt-20">
           to educate the world about the <br />
           <span class="text-primary inline-block animate-pulse">
             metaverse, <br />
@@ -65,30 +87,28 @@
       </div>
       <div
         class="
-          text-5xl
-          sm:text-6xl
-          md:text-8xl
-          lg:text-9xl
+          hidden
           font-bold
-          md:pl-20
-          lg:pl-36
+          md:block md:text-8xl md:pl-20
+          lg:text-9xl lg:pl-36
         "
       >
         Our Mission
       </div>
 
-      <div class="absolute top-0 left-0 hidden md:block" style="z-index: -1">
-        <img src="./assets/rock-large.png" class="w-64 object-contain" />
+      <div class="absolute top-16 left-0 hidden md:block" style="z-index: -1">
+        <img src="./assets/rock-large.png" class="w-72 object-contain" />
       </div>
     </section>
 
     <section
       id="waitlist"
-      class="py-10 text-center container max-w-md mx-auto px-1 md:hidden"
+      class="text-center mt-20 container max-w-md mx-auto px-5 md:hidden"
     >
       <form @submit.prevent="joinWaitlist">
-        <h5 class="text-3xl font-bold md:text-xl mb-3">
-          be the first to know
+        <h5 class="text-4xl font-bold mb-3">
+          be the <br />
+          first to know <br />
           <span class="text-primary md:text-white">when we launch</span>
         </h5>
         <div class="px-3">
@@ -116,11 +136,11 @@
     </section>
   </main>
 
-  <footer id="footer" class="flex flex-col justify-end gap-y-6">
-    <div class="container max-w-screen-sm mx-auto md:pt-10">
+  <footer id="footer" class="flex flex-col justify-end items-end pt-10">
+    <div class="container max-w-screen-sm mx-auto">
       <form
         @submit.prevent="joinWaitlist"
-        class="hidden md:block max-w-md mx-auto mt-10 text-center"
+        class="hidden md:block max-w-md mx-auto mt-10 mt:0 text-center"
       >
         <h5 class="text-xl font-bold mb-3">
           be the first to know when we launch
@@ -153,7 +173,7 @@
         <p class="font-bold">hello@metavrsd.io</p>
       </div>
 
-      <div id="community" class="pt-8 pb-32 text-center md:mb-40">
+      <div id="community" class="pt-8 pb-32 text-center">
         <h5 class="text-2xl">join our community</h5>
         <p class="font-bold text-sm">
           <span v-for="(item, i) in socials" :key="i">
@@ -170,10 +190,14 @@
         </p>
       </div>
 
-      <div class="text-center p-2 md:pb-5">
-        <div class="mb-2">San Francisco | Lagos | Waterloo</div>
+      <div class="pb-4 hidden md:block text-center">
+        San Francisco | Lagos | Waterloo
+      </div>
+
+      <div class="text-center p-2 md:pb-3">
+        <div class="mb-2 md:hidden">San Francisco | Lagos | Waterloo</div>
         <div class="text-black font-bold">
-          &copy; <a href="/" class="animate-pulse inline-flex">Metavrsd</a>
+          &copy; <a href="/" class="animate-pulse inline-flex">METAVRSD</a>
           {{ new Date().getFullYear() }}.
         </div>
       </div>
@@ -208,13 +232,6 @@ export default {
 </script>
 
 <style>
-#mission {
-  background-image: url('./assets/victory.png');
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 #footer {
   background-image: url('./assets/okay.png');
   background-size: 100% 732px;
@@ -224,13 +241,8 @@ export default {
 @media (min-width: 768px) {
   #footer {
     background-image: url('./assets/okay-large.png');
-    background-size: 600px 100%;
-    background-position: center;
-    padding-top: 200px;
-  }
-
-  #mission {
-    background: none;
+    background-size: 600px 900px;
+    background-position: center bottom -250px;
   }
 }
 </style>

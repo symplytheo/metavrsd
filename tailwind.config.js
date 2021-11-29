@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Roboto Mono', ...defaultTheme.fontFamily.sans],
+        sans: ['GT Eesti Pro Display', ...defaultTheme.fontFamily.sans],
       },
       colors: {
         primary: {
