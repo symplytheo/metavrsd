@@ -15,11 +15,11 @@ module.exports = {
           dark: '#33f8f0',
         },
       },
-    },
-  },
-  variants: {
-    extend: {
-      animation: ['hover', 'focus'],
+      fontSize: {
+        '10xl': '10rem',
+        '11xl': '11rem',
+        '12xl': '12rem',
+      },
     },
   },
   plugins: [],
