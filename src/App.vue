@@ -18,8 +18,7 @@
     >
       <div class="container max-w-screen-lg md:px-10 mx-auto">
         <h4 class="text-5xl sm:text-6xl md:text-6xl md:text-center font-bold">
-          <span class="text-primary inline-block animate-pulse">Welcome</span
-          >,<br />
+          <span class="text-primary inline-block">Welcome</span>,<br />
           let’s get you meta-versed
         </h4>
         <p class="my-3 text-xl md:text-2xl font-medium hidden md:block">
@@ -50,7 +49,7 @@
       </div>
 
       <div
-        class="absolute -bottom-40 right-60 hidden md:block"
+        class="absolute -bottom-40 md:right-1 lg:right-60 hidden md:block"
         style="z-index: -1"
       >
         <img src="./assets/victory-large.png" class="w-60 object-contain" />
@@ -73,11 +72,20 @@
     </div>
 
     <section id="mission" class="md:mx-0 px-2 md:px-0 md:pt-52 relative">
-      <div class="container max-w-md md:max-w-screen-sm mx-auto mb-5">
+      <div
+        class="
+          container
+          max-w-md
+          mx-auto
+          mb-5
+          md:max-w-screen-sm md:pl-40
+          lg:pl-1
+        "
+      >
         <h4 class="text-5xl font-bold md:hidden">Our Mission</h4>
-        <p class="text-2xl sm:text-2xl md:text-3xl md:pt-20">
+        <p class="text-2xl sm:text-2xl md:text-3xl md:pt-16">
           to educate the world about the <br />
-          <span class="text-primary inline-block animate-pulse">
+          <span class="text-primary inline-block">
             metaverse, <br />
             blockchain and <br />
             other disruptive concepts <br />
@@ -86,12 +94,7 @@
         </p>
       </div>
       <div
-        class="
-          hidden
-          font-bold
-          md:block md:text-8xl md:pl-20
-          lg:text-9xl lg:pl-36
-        "
+        class="hidden font-medium md:block md:text-9xl md:pl-24 lg:text-11xl"
       >
         Our Mission
       </div>
@@ -119,14 +122,12 @@
             class="
               px-3
               py-3
-              placeholder-gray-400
+              placeholder-gray-200
               bg-transparent
               text-sm
               border border-white
               outline-none
-              animate-pulse
-              focus:outline-none focus:ring-0 focus:animate-none
-              hover:animate-none
+              focus:outline-none focus:ring-0
               w-full
             "
             required
@@ -136,7 +137,10 @@
     </section>
   </main>
 
-  <footer id="footer" class="flex flex-col justify-end items-end pt-10">
+  <footer
+    id="footer"
+    class="flex flex-col justify-end items-end pt-10 md:pt-60"
+  >
     <div class="container max-w-screen-sm mx-auto">
       <form
         @submit.prevent="joinWaitlist"
@@ -153,14 +157,12 @@
             class="
               px-3
               py-3
-              placeholder-gray-400
+              placeholder-gray-200
               bg-transparent
               text-sm
               border border-white
               outline-none
-              animate-pulse
-              focus:outline-none focus:ring-0 focus:animate-none
-              hover:animate-none
+              focus:outline-none focus:ring-0
               w-full
             "
             required
@@ -168,12 +170,15 @@
         </div>
       </form>
 
-      <div id="partner" class="pt-36 pb-8 mt-8 px-5 text-center md:pt-8 my-10">
+      <div
+        id="partner"
+        class="pt-36 pb-8 mt-8 px-5 text-center md:pt-10 my-10 md:my-0"
+      >
         <h5 class="text-4xl md:text-lg">want to work or partner with us?</h5>
         <p class="font-bold">hello@metavrsd.io</p>
       </div>
 
-      <div id="community" class="pt-8 pb-32 text-center">
+      <div id="community" class="pt-8 pb-32 md:pb-12 text-center">
         <h5 class="text-2xl">join our community</h5>
         <p class="font-bold text-sm">
           <span v-for="(item, i) in socials" :key="i">
@@ -197,7 +202,7 @@
       <div class="text-center p-2 md:pb-3">
         <div class="mb-2 md:hidden">San Francisco | Lagos | Waterloo</div>
         <div class="text-black font-bold">
-          &copy; <a href="/" class="animate-pulse inline-flex">METAVRSD</a>
+          &copy; <a href="/" class="inline-flex">METAVRSD</a>
           {{ new Date().getFullYear() }}.
         </div>
       </div>
