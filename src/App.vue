@@ -139,7 +139,7 @@
 
   <footer
     id="footer"
-    class="flex flex-col justify-end items-end pt-10 md:pt-60"
+    class="flex flex-col justify-end items-end pt-16 md:pt-60"
   >
     <div class="container max-w-screen-sm mx-auto">
       <form
@@ -172,9 +172,12 @@
 
       <div
         id="partner"
-        class="pt-36 pb-8 mt-8 px-5 text-center md:pt-10 my-10 md:my-0"
+        class="pt-32 pb-8 mt-8 px-5 text-center md:pt-10 my-10 md:my-0"
       >
-        <h5 class="text-4xl md:text-lg">want to work or partner with us?</h5>
+        <h5 class="text-4xl md:text-xl">
+          want to work or <br class="md:hidden" />
+          partner with us?
+        </h5>
         <p class="font-bold">hello@metavrsd.io</p>
       </div>
 
@@ -241,6 +244,7 @@ export default {
   background-image: url('./assets/okay.png');
   background-size: 100% 732px;
   background-repeat: no-repeat;
+  background-position: center bottom -100px;
 }
 
 @media (min-width: 768px) {
