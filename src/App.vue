@@ -5,7 +5,7 @@
     </a>
   </header>
 
-  <main class="pb-20 pt-10">
+  <main class="pb-20 pt-5">
     <section
       class="
         container
@@ -13,19 +13,31 @@
         mx-auto
         text-center
         relative
+        h-screen
         md:mx-0 md:max-w-full md:text-left
       "
     >
-      <div class="container max-w-screen-lg md:px-10 mx-auto">
-        <h4 class="text-5xl sm:text-6xl md:text-6xl md:text-center font-bold">
-          <span class="text-primary inline-block">Welcome</span>,<br />
+      <div class="container max-w-screen-md mx-auto relative">
+        <h2
+          class="
+            text-5xl
+            sm:text-6xl
+            md:text-7xl md:text-center
+            font-bold
+            text-primary
+          "
+        >
+          welcome,
+        </h2>
+        <h3 class="text-5xl sm:text-6xl md:text-7xl font-medium">
           let’s get you meta-versed
-        </h4>
-        <p class="my-3 text-xl md:text-2xl font-medium hidden md:block">
-          the world is changing really fast and it’s easy to feel like you can’t
-          keep up with everything. well, here we are!
-        </p>
-        <div class="flex flex-col md:flex-row gap-3 p-2">
+        </h3>
+        <div class="mt-5 mb-8 md:text-xl hidden md:block font-thin">
+          the world is changing really fast and it’s easy to feel like <br />
+          you can’t keep up with everything. <br />
+          <span class="font-medium">well, here we are...</span>
+        </div>
+        <div class="flex flex-col md:flex-row gap-3">
           <a href="#community">
             <base-button
               size="large"
@@ -46,13 +58,16 @@
             </base-button>
           </a>
         </div>
-      </div>
 
-      <div
-        class="absolute -bottom-40 md:right-1 lg:right-60 hidden md:block"
-        style="z-index: -1"
-      >
-        <img src="./assets/victory-large.png" class="w-60 object-contain" />
+        <div
+          class="absolute -top-28 md:left-0 w-full hidden md:block"
+          style="z-index: -1"
+        >
+          <img
+            src="./assets/victory-large.png"
+            class="w-80 invert object-contain ml-auto -mr-20"
+          />
+        </div>
       </div>
     </section>
 
@@ -71,7 +86,7 @@
       <img src="./assets/rock.png" class="mx-auto" />
     </div>
 
-    <section id="mission" class="md:mx-0 px-2 md:px-0 md:pt-52 relative">
+    <section id="mission" class="md:mx-0 px-2 md:px-0 md:pt-0 relative">
       <div
         class="
           container
@@ -99,7 +114,7 @@
         Our Mission
       </div>
 
-      <div class="absolute top-16 left-0 hidden md:block" style="z-index: -1">
+      <div class="absolute top-0 left-0 hidden md:block" style="z-index: -1">
         <img src="./assets/rock-large.png" class="w-72 object-contain" />
       </div>
     </section>
