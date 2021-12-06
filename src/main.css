@@ -10,6 +10,14 @@
 
 @font-face {
   font-family: 'GT Eesti Pro Display';
+  src: local('GT Eesti Pro Display Thin'), local('GTEestiProDisplay-Thin'),
+      url('./assets/fonts/GTEestiProDisplay-Thin.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GT Eesti Pro Display';
   src: url('./assets/fonts/GTEestiProDisplay-Regular.eot');
   src: local('GT Eesti Pro Display Regular'), local('GTEestiProDisplay-Regular'),
       url('./assets/fonts/GTEestiProDisplay-Regular.eot?#iefix') format('embedded-opentype'),
@@ -72,4 +80,5 @@ html {
   scroll-behavior: smooth;
   background: #000;
   color: #fff;
+  font-weight: 400;
 }
