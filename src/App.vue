@@ -5,7 +5,7 @@
     </a>
   </header>
 
-  <main class="pb-20 pt-10">
+  <main class="pt-2">
     <section
       class="
         container
@@ -13,19 +13,24 @@
         mx-auto
         text-center
         relative
-        md:mx-0 md:max-w-full md:text-left
+        md:h-screen md:mx-0 md:max-w-full md:text-left
       "
     >
-      <div class="container max-w-screen-lg md:px-10 mx-auto">
-        <h4 class="text-5xl sm:text-6xl md:text-6xl md:text-center font-bold">
-          <span class="text-primary inline-block">Welcome</span>,<br />
+      <div class="container max-w-screen-md mx-auto relative">
+        <h2
+          class="text-5xl sm:text-6xl md:text-6xl md:text-center text-primary"
+        >
+          welcome,
+        </h2>
+        <h3 class="text-5xl sm:text-6xl md:text-6xl tracking-wider">
           let’s get you meta-versed
-        </h4>
-        <p class="my-3 text-xl md:text-2xl font-medium hidden md:block">
-          the world is changing really fast and it’s easy to feel like you can’t
-          keep up with everything. well, here we are!
-        </p>
-        <div class="flex flex-col md:flex-row gap-3 p-2">
+        </h3>
+        <div class="mt-3 mb-5 md:text-xl hidden md:block font-light">
+          the world is changing really fast and it’s easy to feel like <br />
+          you can’t keep up with everything. <br />
+          <span class="font-medium">well, here we are...</span>
+        </div>
+        <div class="flex flex-col p-3 md:p-0 md:flex-row gap-3">
           <a href="#community">
             <base-button
               size="large"
@@ -46,13 +51,16 @@
             </base-button>
           </a>
         </div>
-      </div>
 
-      <div
-        class="absolute -bottom-40 md:right-1 lg:right-60 hidden md:block"
-        style="z-index: -1"
-      >
-        <img src="./assets/victory-large.png" class="w-60 object-contain" />
+        <div
+          class="absolute -top-32 md:left-0 w-full hidden md:block"
+          style="z-index: -1"
+        >
+          <img
+            src="./assets/victory-large.png"
+            class="w-80 object-contain ml-auto lg:-mr-16"
+          />
+        </div>
       </div>
     </section>
 
@@ -71,36 +79,48 @@
       <img src="./assets/rock.png" class="mx-auto" />
     </div>
 
-    <section id="mission" class="md:mx-0 px-2 md:px-0 md:pt-52 relative">
+    <section id="mission" class="px-2 md:px-0 relative md:h-screen">
       <div
         class="
           container
           max-w-md
           mx-auto
           mb-5
-          md:max-w-screen-sm md:pl-40
-          lg:pl-1
+          md:pl-3 md:my-auto md:ml-auto md:mr-0
+          lg:max-w-screen-sm lg:pl-40 lg:mx-auto
         "
       >
         <h4 class="text-5xl font-bold md:hidden">Our Mission</h4>
-        <p class="text-2xl sm:text-2xl md:text-3xl md:pt-16">
+        <p class="text-2xl md:pt-16">
           to educate the world about the <br />
           <span class="text-primary inline-block">
             metaverse, <br />
             blockchain and <br />
-            other disruptive concepts <br />
+            other disruptive concepts
           </span>
+          <br />
           with simple, fun and personalised games.
         </p>
       </div>
+
       <div
-        class="hidden font-medium md:block md:text-9xl md:pl-24 lg:text-11xl"
+        class="
+          hidden
+          font-medium
+          absolute
+          md:bottom-32
+          lg:bottom-20
+          left-0
+          w-full
+          md:block
+        "
+        style="font-size: 18.5vw"
       >
-        Our Mission
+        our &nbsp;mission
       </div>
 
-      <div class="absolute top-16 left-0 hidden md:block" style="z-index: -1">
-        <img src="./assets/rock-large.png" class="w-72 object-contain" />
+      <div class="absolute -top-64 left-0 hidden md:block" style="z-index: -1">
+        <img src="./assets/rock-large.png" class="w-96 object-contain" />
       </div>
     </section>
 
@@ -137,7 +157,96 @@
     </section>
   </main>
 
-  <footer
+  <div class="relative -mt-20 overflow-hidden">
+    <img
+      src="./assets/okay-large.png"
+      class="mx-auto w-2/3 object-contain relative"
+    />
+    <div class="absolute bottom-0 left-0 w-full h-3/5 hidden md:block">
+      <div
+        class="
+          container
+          max-w-md
+          lg:max-w-screen-sm
+          mx-auto
+          h-full
+          text-center
+          flex flex-col
+          justify-between
+        "
+      >
+        <form
+          @submit.prevent="joinWaitlist"
+          class="hidden md:block lg:w-3/5 mx-auto font-light"
+        >
+          <h5 class="text-xl mb-3">
+            be the <span class="font-bold">first</span> to know when we launch
+          </h5>
+          <div class="px-3">
+            <input
+              v-model="email"
+              type="email"
+              placeholder="Enter your email"
+              class="
+                px-3
+                py-3
+                placeholder-gray-200
+                bg-transparent
+                text-sm
+                border border-white
+                outline-none
+                focus:outline-none focus:ring-0
+                w-full
+              "
+              required
+            />
+          </div>
+        </form>
+
+        <div id="partner" class="md:pt-14 md:pb-6 lg:pt-28 pb-12">
+          <h5 class="text-4xl md:text-2xl font-light">
+            want to
+            <span class="font-normal"
+              >work or <br class="md:hidden" />
+              partner</span
+            >
+            with us?
+          </h5>
+          <p class="font-bold text-lg">hello@metavrsd.io</p>
+        </div>
+
+        <div id="community" class="md:py-8 lg:py-16">
+          <h5 class="text-2xl font-light">join our community</h5>
+          <p class="text-sm">
+            <span v-for="(item, i) in socials" :key="i">
+              <a
+                :href="item.href"
+                class="m-1"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {{ item.title }}
+              </a>
+              <span v-if="i < socials.length - 1">-</span>
+            </span>
+          </p>
+        </div>
+
+        <div class="uppercase font-light text-sm tracking-widest">
+          San Francisco | Lagos | Waterloo
+        </div>
+
+        <div class="md:py-6 lg:py-10 text-black">
+          <h1 class="font-medium text-sm tracking-widest">
+            &copy; <a href="/" class="inline-flex">METAVRSD</a>
+            {{ new Date().getFullYear() }}.
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <footer
     id="footer"
     class="flex flex-col justify-end items-end pt-16 md:pt-60"
   >
@@ -198,7 +307,7 @@
         </p>
       </div>
 
-      <div class="pb-4 hidden md:block text-center">
+      <div class="pb-4 hidden md:block text-sm uppercase text-center">
         San Francisco | Lagos | Waterloo
       </div>
 
@@ -210,7 +319,7 @@
         </div>
       </div>
     </div>
-  </footer>
+  </footer> -->
 </template>
 
 <script>
@@ -250,8 +359,8 @@ export default {
 @media (min-width: 768px) {
   #footer {
     background-image: url('./assets/okay-large.png');
-    background-size: 600px 900px;
-    background-position: center bottom -250px;
+    background-size: 60% 100vh;
+    /* background-position: center bottom -250px; */
   }
 }
 </style>
