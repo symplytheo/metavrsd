@@ -15,6 +15,23 @@ module.exports = {
           dark: '#33f8f0',
         },
       },
+      fontSize: {
+        '5.7vw': '5.7vw',
+      },
+      height: {
+        30: '7.5rem',
+      },
+      width: {
+        42: '10.5rem',
+        '30vw': '30vw',
+        '67.5vw': '67.5vw',
+      },
+      padding: {
+        '5vw': '5vw',
+      },
+      margin: {
+        '5vw': '5vw',
+      },
     },
   },
   plugins: [],
