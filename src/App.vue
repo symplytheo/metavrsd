@@ -251,7 +251,14 @@
             <span class="font-normal block md:inline">work or partner</span>
             with us?
           </h5>
-          <p class="font-bold text-2xl md:text-lg">hello@metavrsd.io</p>
+          <p>
+            <a
+              href="mailto:hello@metavrsd.io"
+              class="font-bold text-2xl md:text-lg"
+            >
+              hello@metavrsd.io
+            </a>
+          </p>
         </div>
 
         <div id="community" class="md:py-8 lg:py-16">
