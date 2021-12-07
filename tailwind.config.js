@@ -16,7 +16,9 @@ module.exports = {
         },
       },
       fontSize: {
+        '1.7vw': '1.7vw',
         '5.7vw': '5.7vw',
+        '18.5vw': '18.5vw',
       },
       height: {
         30: '7.5rem',
@@ -28,6 +30,8 @@ module.exports = {
       },
       padding: {
         '5vw': '5vw',
+        '12vh': '12vh',
+        '8vh': '8vh',
       },
       margin: {
         '5vw': '5vw',

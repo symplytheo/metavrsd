@@ -20,7 +20,7 @@
         <h2
           class="
             text-6xl text-primary
-            md:text-center md:leading-none md:tracking-tighter md:text-5.7vw
+            md:text-center md:leading-none md:text-5.7vw
           "
         >
           welcome,
@@ -36,8 +36,16 @@
           let’s get you meta-versed
         </h3>
         <div
-          class="mt-1 mb-4 pl-5vw hidden md:block font-light leading-tight"
-          style="font-size: 1.7vw"
+          class="
+            mt-1
+            mb-4
+            pl-5vw
+            hidden
+            text-1.7vw
+            md:block
+            font-light
+            leading-tight
+          "
         >
           the world is changing really fast and it’s easy to feel like <br />
           you can’t keep up with everything. <br />
@@ -98,20 +106,11 @@
     </div>
 
     <section id="mission" class="px-2 md:px-0 relative md:h-screen">
-      <!-- <div
-        class="
-          container
-          max-w-screen
-          mx-auto
-          mb-5
-          md:pl-3 md:my-auto md:ml-auto md:mr-0
-          lg:max-w-screen-sm lg:pl-40 lg:mx-auto
-        "
-      >
+      <div class="md:pt-12vh lg:pt-8vh">
         <h4 class="text-5xl font-bold md:hidden tracking-widest">
           our mission
         </h4>
-        <p class="text-2xl md:pt-16" style="font-size: 5vw">
+        <p class="text-2xl md:hidden font-light">
           to educate the world about the <br />
           <span class="text-primary inline-block">
             metaverse, <br />
@@ -121,13 +120,25 @@
           <br />
           with simple, fun and personalised games.
         </p>
-      </div> -->
+      </div>
 
-      <div
-        class="hidden absolute left-0 w-full text-center leading-none md:block"
-        style="font-size: 18.5vw; bottom: 20vh"
-      >
-        our &nbsp;mission
+      <div class="hidden absolute left-0 w-full md:block" style="bottom: 20vh">
+        <p
+          class="text-2xl leading-tight font-light"
+          style="font-size: 4.5vh; margin-left: 35vw"
+        >
+          to educate the world about the <br />
+          <span class="text-primary inline-block">
+            metaverse, <br />
+            blockchain and <br />
+            other disruptive concepts
+          </span>
+          <br />
+          with simple, fun and personalised games.
+        </p>
+        <div class="text-18.5vw text-center leading-none">
+          our &nbsp;mission
+        </div>
       </div>
 
       <div
@@ -136,8 +147,7 @@
       >
         <img
           src="./assets/rock-large.png"
-          class="h-full filter saturate-200"
-          style="width: 30vw"
+          class="h-full filter saturate-200 w-30vw"
         />
       </div>
     </section>
@@ -303,5 +313,3 @@ export default {
   },
 }
 </script>
-
-<style></style>
