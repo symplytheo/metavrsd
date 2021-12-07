@@ -4,7 +4,7 @@
 
 @layer components {
   .btn {
-    @apply inline-flex items-center justify-center uppercase px-6 font-normal tracking-wider;
+    @apply inline-flex items-center justify-center uppercase px-4 font-normal tracking-wider;
   }
 }
 
