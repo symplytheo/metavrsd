@@ -1,11 +1,11 @@
 <template>
-  <header class="flex items-center py-4 px-8 relative">
-    <a href="/" class="mx-auto">
-      <app-logo />
-    </a>
-  </header>
+  <header class="relative h-screen flex flex-col justify-center">
+    <nav class="flex items-center absolute z-10 top-0 w-full py-4">
+      <a href="/" class="mx-auto">
+        <app-logo />
+      </a>
+    </nav>
 
-  <main>
     <section
       class="
         container
@@ -13,22 +13,37 @@
         mx-auto
         text-center
         relative
-        md:h-screen md:mx-0 md:max-w-full md:text-left
+        md:mx-0 md:max-w-full md:text-left
       "
     >
-      <div class="container max-w-screen-md pt-8 mx-auto relative">
-        <h2 class="text-5xl sm:text-6xl md:text-center text-primary">
+      <div class="md:w-67.5vw mx-auto">
+        <h2
+          class="
+            text-6xl text-primary
+            md:text-center md:leading-none md:tracking-tighter md:text-5.7vw
+          "
+        >
           welcome,
         </h2>
-        <h3 class="text-5xl sm:text-6xl mb-1 tracking-wider">
+        <h3
+          class="
+            text-5xl
+            sm:text-6xl
+            tracking-wider
+            md:tracking-normal md:text-5.7vw md:leading-none md:pl-5vw
+          "
+        >
           let’s get you meta-versed
         </h3>
-        <div class="mt-1 mb-4 md:text-lg hidden md:block font-light">
+        <div
+          class="mt-1 mb-4 pl-5vw hidden md:block font-light leading-tight"
+          style="font-size: 1.7vw"
+        >
           the world is changing really fast and it’s easy to feel like <br />
           you can’t keep up with everything. <br />
           <span class="font-medium">well, here we are...</span>
         </div>
-        <div class="flex flex-col p-3 md:p-0 md:flex-row gap-3">
+        <div class="flex flex-col py-3 md:ml-5vw md:p-0 md:flex-row gap-3">
           <a href="#community">
             <base-button
               size="large"
@@ -49,21 +64,26 @@
             </base-button>
           </a>
         </div>
-
-        <div
-          class="absolute -top-28 md:left-0 w-full hidden md:block"
-          style="z-index: -1"
-        >
-          <img
-            src="./assets/victory-large.png"
-            class="w-80 object-contain ml-auto lg:-mr-16"
-          />
-        </div>
       </div>
     </section>
 
-    <section class="container max-w-md mx-auto md:hidden relative">
-      <img src="./assets/victory.png" class="relative mx-auto" />
+    <div
+      class="absolute left-0 hidden md:block h-full w-full"
+      style="z-index: -1; bottom: -10vh"
+    >
+      <img
+        src="./assets/victory-large.png"
+        class="filter saturate-200 ml-auto h-full w-30vw mr-5vw"
+      />
+    </div>
+  </header>
+
+  <main class="relative md:pb-60">
+    <section class="container -mt-44 max-w-md mx-auto md:hidden relative">
+      <img
+        src="./assets/victory.png"
+        class="relative filter saturate-200 mx-auto"
+      />
 
       <div class="absolute bottom-24 w-full flex justify-center">
         <p class="w-72 text-center text-2xl">
@@ -74,14 +94,14 @@
     </section>
 
     <div class="-mt-72 md:hidden">
-      <img src="./assets/rock.png" class="mx-auto" />
+      <img src="./assets/rock.png" class="mx-auto filter saturate-200" />
     </div>
 
     <section id="mission" class="px-2 md:px-0 relative md:h-screen">
-      <div
+      <!-- <div
         class="
           container
-          max-w-md
+          max-w-screen
           mx-auto
           mb-5
           md:pl-3 md:my-auto md:ml-auto md:mr-0
@@ -91,7 +111,7 @@
         <h4 class="text-5xl font-bold md:hidden tracking-widest">
           our mission
         </h4>
-        <p class="text-2xl md:pt-16">
+        <p class="text-2xl md:pt-16" style="font-size: 5vw">
           to educate the world about the <br />
           <span class="text-primary inline-block">
             metaverse, <br />
@@ -101,26 +121,24 @@
           <br />
           with simple, fun and personalised games.
         </p>
-      </div>
+      </div> -->
 
       <div
-        class="
-          hidden
-          font-medium
-          absolute
-          md:bottom-32
-          lg:bottom-20
-          left-0
-          w-full
-          md:block
-        "
-        style="font-size: 18.5vw"
+        class="hidden absolute left-0 w-full text-center leading-none md:block"
+        style="font-size: 18.5vw; bottom: 20vh"
       >
         our &nbsp;mission
       </div>
 
-      <div class="absolute -top-60 left-0 hidden md:block" style="z-index: -1">
-        <img src="./assets/rock-large.png" class="w-96 object-contain" />
+      <div
+        class="absolute left-0 h-screen hidden md:block"
+        style="z-index: -1; top: -15vh"
+      >
+        <img
+          src="./assets/rock-large.png"
+          class="h-full filter saturate-200"
+          style="width: 30vw"
+        />
       </div>
     </section>
 
@@ -160,11 +178,20 @@
   <footer class="relative mt-20 md:-mt-20">
     <img
       src="./assets/okay-large.png"
-      class="hidden md:block mx-auto w-2/3 object-contain relative"
+      class="
+        hidden
+        md:block
+        mx-auto
+        w-2/3
+        object-contain
+        relative
+        filter
+        saturate-200
+      "
     />
     <img
       src="./assets/okay.png"
-      class="md:hidden w-full sm:w-3/4 sm:mx-auto relative"
+      class="md:hidden w-full sm:w-3/4 sm:mx-auto relative filter saturate-200"
     />
 
     <div class="absolute bottom-0 left-0 w-full h-3/4 py-7 md:py-1 md:h-3/5">
