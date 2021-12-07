@@ -124,7 +124,7 @@
 
       <div class="hidden absolute left-0 w-full md:block" style="bottom: 20vh">
         <p
-          class="text-2xl leading-tight font-light"
+          class="text-2xl leading-tight"
           style="font-size: 4.5vh; margin-left: 35vw"
         >
           to educate the world about the <br />
