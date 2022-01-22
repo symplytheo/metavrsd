@@ -28,10 +28,10 @@
         z-index: 200;
         pointer-events: none;
         background: radial-gradient(
-          circle 20vmax at var(--cursorX) var(--cursorY),
-          rgba(0, 0, 0, 0) 0%,
-          rgba(0, 0, 0, 0.25) 98%,
-          rgba(0, 0, 0, 0.9) 100%
+          circle 18vmax at var(--cursorX) var(--cursorY),
+          rgba(255, 255, 255, 0.9) 0%,
+          rgba(0, 0, 0, 0) 15%,
+          rgba(0, 0, 0, 0.92) 100%
         );
       }
     </style>
@@ -47,6 +47,14 @@
 
       document.addEventListener('mousemove', update)
       document.addEventListener('touchmove', update)
+
+      document.addEventListener('mouseover', () => {
+        document.getElementsByClassName('galaxy')[0].style.display = 'block'
+      })
+
+      document.addEventListener('mouseout', () => {
+        document.getElementsByClassName('galaxy')[0].style.display = 'none'
+      })
     </script>
   </head>
   <body>
