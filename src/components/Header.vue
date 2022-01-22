@@ -4,7 +4,7 @@
     class="relative h-screen flex flex-col justify-center overflow-hidden"
   >
     <nav class="flex items-center absolute z-10 top-0 w-full py-4">
-      <a href="/" class="mx-auto">
+      <a href="/" class="mx-auto" aria-label="Logo">
         <app-logo />
       </a>
     </nav>
