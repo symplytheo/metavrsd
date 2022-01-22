@@ -1,7 +1,11 @@
 <template>
-  <app-header />
-  <app-content />
-  <app-footer />
+  <div class="relative overflow-hidden">
+    <app-header />
+    <app-content />
+    <app-footer />
+
+    <div class="galaxy"></div>
+  </div>
 </template>
 
 <script>
@@ -26,4 +30,18 @@ export default {
   }),
 }
 </script>
-<style></style>
+<style>
+.galaxy {
+  background-image: url(./assets/galaxy.svg);
+  /* background-color: tomato; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200%;
+  width: 200%;
+  position: absolute;
+  top: -10vh;
+  left: -5vw;
+  z-index: -3;
+  display: none;
+}
+</style>

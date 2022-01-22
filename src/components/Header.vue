@@ -103,7 +103,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 #header .galaxy {
   background-image: url(../assets/galaxy.svg);
   background-size: cover;
@@ -112,8 +112,8 @@ export default {
   width: 210vw;
   position: absolute;
   z-index: -2;
-  top: -25vh;
-  left: -50vw;
+  top: -45vh;
+  left: -35vw;
   display: none;
 }
 </style>
