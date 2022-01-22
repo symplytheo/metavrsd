@@ -121,18 +121,6 @@ export default {
       { title: 'twitter', href: 'http://twitter.com' },
     ],
   }),
-  mounted() {
-    function update(e) {
-      var x = e.clientX || e.touches[0].clientX
-      var y = e.clientY || e.touches[0].clientY
-
-      document.documentElement.style.setProperty('--cursorX', x + 'px')
-      document.documentElement.style.setProperty('--cursorY', y + 'px')
-    }
-
-    document.addEventListener('mousemove', update)
-    document.addEventListener('touchmove', update)
-  },
   methods: {
     joinWaitlist() {
       alert(this.email + ' has been added to waitlist')
@@ -140,26 +128,4 @@ export default {
   },
 }
 </script>
-<style>
-/* Flashlight Overlay */
-:root {
-  cursor: none;
-  --cursorX: 50vw;
-  --cursorY: 50vh;
-}
-:root:before {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  z-index: 200;
-  pointer-events: none;
-  background: radial-gradient(
-    circle 18vmax at var(--cursorX) var(--cursorY),
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.2) 80%,
-    rgba(0, 0, 0, 0.75) 100%
-  );
-}
-</style>
+<style></style>
