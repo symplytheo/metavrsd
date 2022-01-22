@@ -59,7 +59,7 @@
             <base-button
               size="large"
               variant="outlined"
-              class="w-4/5 md:w-auto border-primary"
+              class="w-4/5 md:w-auto border-primary bg-black bg-opacity-50"
             >
               Join our community
             </base-button>
@@ -69,7 +69,7 @@
               size="large"
               variant="outlined"
               color="white"
-              class="w-4/5 md:w-auto"
+              class="w-4/5 md:w-auto bg-black bg-opacity-50"
             >
               Partner with us
             </base-button>
@@ -79,7 +79,15 @@
     </section>
 
     <div
-      class="absolute left-0 hidden md:block h-full w-full"
+      class="
+        absolute
+        left-0
+        hidden
+        md:block
+        h-full
+        w-full
+        bg-black bg-opacity-50
+      "
       style="z-index: -1; bottom: -10vh"
     >
       <img
