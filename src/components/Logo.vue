@@ -1,3 +1,3 @@
 <template>
-  <img src="../assets/logo.svg" class="h-30 w-42" />
+  <img src="../assets/logo.svg" alt="Metavrsd" height="120" width="168" />
 </template>

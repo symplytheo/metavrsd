@@ -37,9 +37,9 @@
           @submit.prevent="joinWaitlist"
           class="hidden md:block lg:w-3/5 mx-auto font-light"
         >
-          <h5 class="text-xl mb-3">
+          <div class="text-xl mb-3">
             be the <span class="font-bold">first</span> to know when we launch
-          </h5>
+          </div>
           <div class="px-3">
             <input
               v-model="email"
@@ -62,11 +62,11 @@
         </form>
 
         <div id="partner" class="md:pt-14 md:pb-6 lg:pt-28 pb-12">
-          <h5 class="text-4xl sm:text-5xl md:text-2xl font-light">
+          <div class="text-4xl sm:text-5xl md:text-2xl font-light">
             want to
             <span class="font-normal block md:inline">work or partner</span>
             with us?
-          </h5>
+          </div>
           <p>
             <a
               href="mailto:hello@metavrsd.io"
@@ -78,9 +78,9 @@
         </div>
 
         <div id="community" class="md:py-8 lg:py-16">
-          <h5 class="text-3xl sm:text-4xl md:text-2xl font-light">
+          <div class="text-3xl sm:text-4xl md:text-2xl font-light">
             join our community
-          </h5>
+          </div>
           <p class="text-sm sm:text-base md:text-sm">
             <span v-for="(item, i) in socials" :key="i">
               <a
