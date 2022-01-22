@@ -1,5 +1,8 @@
 <template>
-  <header class="relative h-screen flex flex-col justify-center">
+  <header
+    id="header"
+    class="relative h-screen flex flex-col justify-center overflow-hidden"
+  >
     <nav class="flex items-center absolute z-10 top-0 w-full py-4">
       <a href="/" class="mx-auto">
         <app-logo />
@@ -81,9 +84,12 @@
     >
       <img
         src="../assets/victory-large.png"
+        alt=""
         class="filter saturate-200 ml-auto h-full w-30vw mr-5vw"
       />
     </div>
+
+    <div id="galaxy" class="galaxy"></div>
   </header>
 </template>
 
@@ -96,3 +102,18 @@ export default {
   components: { AppLogo, BaseButton },
 }
 </script>
+
+<style>
+#header .galaxy {
+  background-image: url(../assets/galaxy.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200vh;
+  width: 210vw;
+  position: absolute;
+  z-index: -2;
+  top: -25vh;
+  left: -50vw;
+  display: none;
+}
+</style>
