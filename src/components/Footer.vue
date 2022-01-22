@@ -2,6 +2,7 @@
   <footer class="relative mt-20 md:-mt-20">
     <img
       src="../assets/okay-large.png"
+      alt=""
       class="
         hidden
         md:block
@@ -15,6 +16,7 @@
     />
     <img
       src="../assets/okay.png"
+      alt=""
       class="md:hidden w-full sm:w-3/4 sm:mx-auto relative filter saturate-200"
     />
 
@@ -112,5 +114,10 @@
 <script>
 export default {
   name: 'Footer',
+  methods: {
+    joinWaitlist() {
+      alert(this.email + ' has been added to waitlist')
+    },
+  },
 }
 </script>
