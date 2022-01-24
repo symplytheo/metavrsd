@@ -4,7 +4,7 @@
     <app-content />
     <app-footer />
 
-    <div class="galaxy"></div>
+    <div id="galaxy-2"></div>
   </div>
 </template>
 
@@ -31,16 +31,15 @@ export default {
 }
 </script>
 <style>
-.galaxy {
+#galaxy-2 {
   background-image: url(./assets/galaxy.svg);
-  /* background-color: tomato; */
   background-size: cover;
   background-repeat: no-repeat;
   height: 200%;
   width: 200%;
   position: absolute;
-  top: -10vh;
-  left: -5vw;
+  top: 0;
+  left: 0;
   z-index: -3;
   display: none;
 }

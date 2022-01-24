@@ -98,7 +98,7 @@
       />
     </div>
 
-    <div id="galaxy" class="galaxy"></div>
+    <div id="galaxy-1"></div>
   </header>
 </template>
 
@@ -113,7 +113,7 @@ export default {
 </script>
 
 <style scoped>
-#header .galaxy {
+#galaxy-1 {
   background-image: url(../assets/galaxy.svg);
   background-size: cover;
   background-repeat: no-repeat;
