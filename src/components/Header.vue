@@ -60,7 +60,12 @@
             <base-button
               size="large"
               variant="outlined"
-              class="w-4/5 md:w-auto border-primary bg-black bg-opacity-50"
+              class="
+                w-4/5
+                md:h-14 md:px-8 md:w-auto
+                border-primary
+                bg-black bg-opacity-50
+              "
             >
               Join our community
             </base-button>
@@ -70,7 +75,7 @@
               size="large"
               variant="outlined"
               color="white"
-              class="w-4/5 md:w-auto bg-black bg-opacity-50"
+              class="w-4/5 md:h-14 md:px-8 md:w-auto bg-black bg-opacity-50"
             >
               Partner with us
             </base-button>
